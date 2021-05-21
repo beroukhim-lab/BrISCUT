@@ -228,17 +228,10 @@ def join_segs(joined_alt_segments, arm, telcent):
 
 
 
-def take_care_arms(fileloc,tt,date,infoloc):
+def take_care_arms(fileloc,tt,date,infoloc,threshold):
     #THIS IS CORRECT
     for arm in ['13','14','15','21','22'] + [str(i)+'q' for i in range(1,23) if i not in [13,14,15,21,22]]+ [str(i)+'p' for i in range(1,23) if i not in [13,14,15,21,22]]:
-        do_arm(arm,fileloc,tt,'amp',date, infoloc)
-        do_arm(arm,fileloc,tt,'del',date,infoloc)
+        do_arm(arm,fileloc,tt,'amp',date, infoloc,threshold)
+        do_arm(arm,fileloc,tt,'del',date,infoloc,threshold)
 
-#if __name__=='__main__':
-    #pass
-    #p = Pool(8)
-    #tumor_types = ['PANCAN']
-    #print tumor_types
-    #for tt in tumor_types:
-    #    take_care_arms(tt,'210303')
 
