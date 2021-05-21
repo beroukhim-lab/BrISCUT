@@ -26,7 +26,7 @@ This code has been tested on Macintosh and Linux using R version 3.6.1 and Pytho
 
 ```
 source("BrISCUT_pipeline.R")
-BrISCUT_pipeline(segfile,ttlist,thedate,ci,infoloc,threshold)
+BrISCUT_pipeline(segfiles,ttlist,thedate,ci,infoloc,threshold)
   -segfiles [list of locations of segmented copy-number data; must correspond to ttlist]
   -ttlist [list of tumor types; must corresponds to segfiles]
   -thedate [enter date]
