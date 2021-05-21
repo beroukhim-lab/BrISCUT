@@ -17,10 +17,10 @@ This takes the output of the preprocessing step and returns BrISCUT results.  ma
 BrISCUT will call combine_BrISCUT_results.py, plot_BrISCUT_results.R, and plot_fig2.R, which will aggregate significant peaks and plot within-cohort results.
 
 ## How to run BrISCUT
-# System requirements
+### System requirements
 This code has been tested on Macintosh and Linux using R version 3.6.1 and Python 2.7.16. The user must also install R packages ismev, extRemes, fitdistrplus, truncdist, segmented, parallel, dplyr,  reticulate, ggplot2, pastecs, gridExtra, stringr, gtable, cowplot, and ggpubr.
 
-# R
+### R
 
 
 
